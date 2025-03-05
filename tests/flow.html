@@ -142,11 +142,11 @@
       let vexPlusTestsURL;
       if (useCDN) {
         // `ver` can specify a version hosted on the unpkg.com / jsdelivr.com CDN. We only support VexFlow 4 or newer:
-        //   ver=unpkg@4.2.3     =>  https://unpkg.com/vxflw-early-access@@4.2.3/build/cjs/vexflow-debug-with-tests.js
-        //   ver=unpkg@5.0.0-alpha.11     =>  https://unpkg.com/vxflw-early-access@@5.0.0-alpha.11/build/cjs/vexflow-debug-with-tests.js
-        //   ver=jsdelivr@4.2.3  =>  https://cdn.jsdelivr.net/npm/vxflw-early-access@@4.2.3/build/cjs/vexflow-debug-with-tests.js
+        //   ver=unpkg@4.2.3     =>  https://unpkg.com/vexflow@4.2.3/build/cjs/vexflow-debug-with-tests.js
+        //   ver=unpkg@5.0.0-alpha.11     =>  https://unpkg.com/vexflow@5.0.0-alpha.11/build/cjs/vexflow-debug-with-tests.js
+        //   ver=jsdelivr@4.2.3  =>  https://cdn.jsdelivr.net/npm/vexflow@4.2.3/build/cjs/vexflow-debug-with-tests.js
         const versionNumber = ver.split('@')[1];
-        vexPlusTestsURL = `${cdnURLPath}vxflw-early-access@${versionNumber}/build/${pathCJSorESM}`;
+        vexPlusTestsURL = `${cdnURLPath}vexflow@${versionNumber}/build/${pathCJSorESM}`;
       } else {
         // We are NOT loading from a CDN. Instead, we are loading from the local filesystem.
         //   ver=build           =>  vexflow/build/

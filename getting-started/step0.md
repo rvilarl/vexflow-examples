@@ -20,7 +20,7 @@ The quickest way to add VexFlow to a web page is via a `<script>` tag.
     <div id="output"></div>
 
     <!-- Load library -->
-    <script src="https://cdn.jsdelivr.net/npm/vexflow@5.0.0/build/cjs/vexflow-core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vexflow/build/cjs/vexflow-core.js"></script>
 
     <!-- Load Bravura and Academico (see vexflow-fonts for available fonts) -->
     <script>
@@ -62,7 +62,7 @@ It is also possible to use face fonts
     <div id="output"></div>
 
     <!-- Load library -->
-    <script src="https://cdn.jsdelivr.net/npm/vxflw-early-access@alpha/build/cjs/vexflow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vexflow/build/cjs/vexflow.js"></script>
 
     <script>
       document.fonts.ready.then(() => {
@@ -74,12 +74,12 @@ It is also possible to use face fonts
 </html>
 ```
 
-Specifying a particular version `vxflw-early-access@x.y.z` is good practice, to prevent rare issues with a future update breaking your deployment. During development &amp; testing, feel free to use the latest release by omitting the version number: https://cdn.jsdelivr.net/npm/vxflw-early-access/build/cjs/vexflow.js
+Specifying a particular version `vexflow@x.y.z` is good practice, to prevent rare issues with a future update breaking your deployment. During development &amp; testing, feel free to use the latest release by omitting the version number: https://cdn.jsdelivr.net/npm/vexflow/build/cjs/vexflow.js
 
 If your project uses a bundler, you can install VexFlow from npm:
 
 ```sh
-npm install vxflw-early-access
+npm install vexflow
 ```
 
 ## Factory (with EasyScore)
